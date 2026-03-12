@@ -1,4 +1,4 @@
 <?php
-echo "Hello SonarQube PHP!";
-echo "Second scan test!";
+echo "Hello SonarQube!";
+echo "Quality Gate Test!";
 ?>
