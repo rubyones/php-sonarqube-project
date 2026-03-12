@@ -1,4 +1,4 @@
 <?php
 echo "Hello SonarQube!";
-echo "Trigger scan again";
+echo "trigger scan";
 ?>
