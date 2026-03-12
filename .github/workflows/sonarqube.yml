@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
@@ -23,11 +23,7 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
-      - name: Run SonarQube scan
+      - name: Run SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v5
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        with:
-          args: >
-            -Dsonar.projectKey=rubyones_php-sonarqube-project
-            -Dsonar.organization=rubyones
